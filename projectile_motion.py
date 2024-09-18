@@ -59,15 +59,9 @@ a=-b/range_input
 import numpy as np
 import matplotlib.pyplot as plt
 
+x=np.linspace(0,range_input,120)
+y=a*x**2+b*x
+fig, axis = plt.subplots()
+axis.plot(x,y)
 
-def f(x,a,b,c):
-    return a*x**2+b*x+c
-
-
-xlist = np.linspace(0,range_input,num=1000)
-ylist = f(xlist,a,b,0)
-
-
-plt.figure(num=0,dpi=120)
-plt.plot(xlist,ylist)
 plt.show()
