@@ -63,5 +63,4 @@ x=np.linspace(0,range_input,120)
 y=a*x**2+b*x
 fig, axis = plt.subplots()
 axis.plot(x,y)
-
 plt.show()
